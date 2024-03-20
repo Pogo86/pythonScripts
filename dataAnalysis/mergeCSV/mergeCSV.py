@@ -11,4 +11,4 @@ joinedList = glob.glob(joinedFiles)
 df = pd.concat(map(pd.read_csv, joinedList), ignore_index=True)
 df.to_csv('/Users/rich/git/pythonScripts/dataAnalysis/mergeCSV/merged.csv', index=False)
 
-print(f'{len(joinedList)} Files Joined')
+print(f'{len(joinedList)} Files Merged')
